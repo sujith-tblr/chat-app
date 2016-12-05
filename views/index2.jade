@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title Simple Chat App
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/style2.css', type='text/css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+  body
+    .col-sm-1
+    .col-sm-3
+      #wrapper
+        form(action='/register', method='post')
+          fieldset
+            legend Register
+            div
+              input(type='text', name='name', placeholder='Username')
+            div
+              input(type='password', name='password', placeholder='Password')
+            div
+              input(type='email', name='email', placeholder='Email')
+            input(type='submit', name='submit', value='Submit')
+    .border.col-sm-3
+    .col-sm-3
+      #wrapper
+        form(action='/login', method='post')
+          fieldset
+            legend Login
+            div
+              input(type='text', name='name', placeholder='Username')
+            div
+              input(type='password', name='password', placeholder='Password')
+            div
+              input(type='text', name='group_id', placeholder='Friends username')  
+            br
+            br
+            input(type='submit', name='submit', value='Submit')

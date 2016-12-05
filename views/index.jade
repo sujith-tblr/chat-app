@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Simple Chat App
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/style.css', type='text/css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='/javascripts/script.js')
+
+  body
+    .col-sm-4
+    .main-class.col-sm-4
+      br
+      h2 Simple Chat App
+    
+      .display-msg
+      
+       
+      
+      form(action='/msg' method='post' onsubmit='')
+        input#form1(type='text', name='message')
+        input(type='hidden', name='ser' value='#{server2}')
+        input(type='hidden', name='cli' value='#{client2}')
+        input(type='submit', value='Send')
